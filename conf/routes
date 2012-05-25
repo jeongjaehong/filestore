@@ -1,0 +1,39 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+
+# Apikey service
+GET     /apikey/genkey_form                     ApikeyController.genkeyForm
+GET     /apikey/list.json                       ApikeyController.listJson
+GET     /apikey/list.xml                        ApikeyController.listXml
+POST    /apikey/genkey                          ApikeyController.genkey
+
+# File service
+GET     /attach/upload_form                     AttachController.uploadForm
+GET     /attach/delete_form                     AttachController.deleteForm
+GET     /attach/list.json                       AttachController.listJson
+GET     /attach/list.xml                        AttachController.listXml
+GET     /attach/{attachid}            	        AttachController.download
+POST    /attach/upload                          AttachController.upload
+POST    /attach/delete                          AttachController.delete
+
+# Photo service
+GET     /photo/upload_form                      PhotoController.uploadForm
+GET     /photo/delete_form                      PhotoController.deleteForm
+GET     /photo/list.json                        PhotoController.listJson
+GET     /photo/list.xml                         PhotoController.listXml
+GET     /photo/{photoid_size}         	        PhotoController.download
+POST    /photo/upload                           PhotoController.upload
+POST    /photo/delete                           PhotoController.delete
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}

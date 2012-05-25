@@ -1,0 +1,8 @@
+﻿#{extends 'main.html' /}
+#{set title:'Generate Apikey' /}
+
+#{form @ApikeyController.genkey(), enctype:'multipart/form-data'}
+	<label for="appname">appname:</label><input type="text" id="appname" name="appname" />
+	<label for="userid">userid:</label><input type="text" id="userid" name="userid" />
+	<input type="submit" value="전송" />
+#{/form}

@@ -1,0 +1,9 @@
+#{extends 'main.html' /}
+#{set title:'File Delete Form' /}
+
+#{form @AttachController.delete()}
+	<label for="apikey">apikey:</label><input type="text" id="apikey" name="apikey" value="44d28516b4304462a3f066618fb56f8c" />
+	<label for="attachid">attachid:</label><input type="text" id="attachid" name="attachid" value="" />
+	<label for="secret">secret:</label><input type="text" id="secret" name="secret" value="" />
+	<input type="submit" value="전송" />
+#{/form}

@@ -1,0 +1,8 @@
+#{extends 'main.html' /}
+#{set title:'Photo Upload Form' /}
+
+#{form @PhotoController.upload(), enctype:'multipart/form-data'}
+	<label for="apikey">apikey:</label><input type="text" name="apikey" value="44d28516b4304462a3f066618fb56f8c" />
+	<label for="myphoto">myphoto:</label><input type="file" id="myphoto" name="myphoto" />
+	<input type="submit" value="전송" /> 
+#{/form}

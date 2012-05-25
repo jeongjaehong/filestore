@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//app/views/AttachController/deleteForm.html=UTF-8
+encoding//app/views/AttachController/uploadForm.html=UTF-8
+encoding//app/views/PhotoController/deleteForm.html=UTF-8
+encoding//app/views/PhotoController/uploadForm.html=UTF-8
+encoding/<project>=UTF-8
+separateDerivedEncodings=true

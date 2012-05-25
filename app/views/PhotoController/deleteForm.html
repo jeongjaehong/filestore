@@ -1,0 +1,9 @@
+#{extends 'main.html' /}
+#{set title:'Photo Delete Form' /}
+
+#{form @PhotoController.delete()}
+	<label for="apikey">apikey:</label><input type="text" id="apikey" name="apikey" value="44d28516b4304462a3f066618fb56f8c" />
+	<label for="photoid">photoid:</label><input type="text" id="photoid" name="photoid" value="" />
+	<label for="secret">secret:</label><input type="text" id="secret" name="secret" value="" />
+	<input type="submit" value="전송" />
+#{/form}
